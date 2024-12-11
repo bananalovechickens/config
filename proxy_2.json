@@ -1,0 +1,23 @@
+{
+  "log": {
+    "loglevel": "debug"
+  },
+  "inbounds": [
+    {
+      "listen": "0.0.0.0",
+      "port": 1080, 
+      "protocol": "shadowsocks",
+      "settings": {
+        "method": "aes-128-gcm",
+        "ota": true, 
+        "password": "sspasswd"
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",  
+      "settings": {}
+    }
+  ]
+}
